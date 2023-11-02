@@ -57,6 +57,7 @@ public class EmailSender {
             Multipart multipart = new MimeMultipart();
             multipart.addBodyPart(messageBodyPart);
             multipart.addBodyPart(attachmentPart);
+            
 
             // Set the content of the email
             message.setContent(multipart);

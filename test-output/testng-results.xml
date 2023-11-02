@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -13,114 +13,17 @@
     <line>
       <![CDATA[STEP4]]>
     </line>
-    <line>
-      <![CDATA[STEP5]]>
-    </line>
-    <line>
-      <![CDATA[STEP6]]>
-    </line>
-    <line>
-      <![CDATA[STEP7]]>
-    </line>
-    <line>
-      <![CDATA[STEP8]]>
-    </line>
-    <line>
-      <![CDATA[STEP9]]>
-    </line>
-    <line>
-      <![CDATA[STEP10]]>
-    </line>
-    <line>
-      <![CDATA[STEP11]]>
-    </line>
-    <line>
-      <![CDATA[STEP12]]>
-    </line>
-    <line>
-      <![CDATA[STEP13]]>
-    </line>
-    <line>
-      <![CDATA[STEP14]]>
-    </line>
-    <line>
-      <![CDATA[STEP15]]>
-    </line>
-    <line>
-      <![CDATA[STEP16]]>
-    </line>
-    <line>
-      <![CDATA[STEP17]]>
-    </line>
-    <line>
-      <![CDATA[STEP18]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-11-02T14:45:05 IST" name="Suite" finished-at="2023-11-02T14:46:12 IST" duration-ms="67146">
+  <suite started-at="2023-11-02T18:15:16 IST" name="Suite" finished-at="2023-11-02T18:15:23 IST" duration-ms="7624">
     <groups>
     </groups>
-    <test started-at="2023-11-02T14:45:05 IST" name="Test" finished-at="2023-11-02T14:46:12 IST" duration-ms="67146">
+    <test started-at="2023-11-02T18:15:16 IST" name="Test" finished-at="2023-11-02T18:15:23 IST" duration-ms="7624">
       <class name="commonMethods.Testcases">
-        <test-method is-config="true" signature="getDataFromConfig()[pri:0, instance:commonMethods.Testcases@117632cf]" started-at="2023-11-02T14:45:05 IST" name="getDataFromConfig" finished-at="2023-11-02T14:45:08 IST" duration-ms="2764" status="PASS">
+        <test-method is-config="true" signature="getDataFromConfig()[pri:0, instance:commonMethods.Testcases@3b582111]" started-at="2023-11-02T18:15:16 IST" name="getDataFromConfig" finished-at="2023-11-02T18:15:18 IST" duration-ms="2502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDataFromConfig -->
-        <test-method signature="ChatBot()[pri:0, instance:commonMethods.Testcases@117632cf]" started-at="2023-11-02T14:45:08 IST" name="ChatBot" finished-at="2023-11-02T14:46:12 IST" duration-ms="64028" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //p[text()='raise an issue']/ancestor::div[@class='dave-userchat']/following::div[@class='dave-botchat']/child::p[@class='dave-chattext'] (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[text()='raise an issue']/ancestor::div[@class='dave-userchat']/following::div[@class='dave-botchat']/child::p[@class='dave-chattext'] (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at commonMethods.Keywords.asserterText(Keywords.java:425)
-at scripts.ChatBot.createnexa(ChatBot.java:35)
-at commonMethods.Testcases.ChatBot(Testcases.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //p[text()='raise an issue']/ancestor::div[@class='dave-userchat']/following::div[@class='dave-botchat']/child::p[@class='dave-chattext']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
-System info: host: 'DESKTOP-TSHER2F', ip: '192.168.0.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="ChatBot2()[pri:0, instance:commonMethods.Testcases@3b582111]" started-at="2023-11-02T18:15:18 IST" name="ChatBot2" finished-at="2023-11-02T18:15:23 IST" duration-ms="4693" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -134,51 +37,9 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
             <line>
               <![CDATA[STEP4]]>
             </line>
-            <line>
-              <![CDATA[STEP5]]>
-            </line>
-            <line>
-              <![CDATA[STEP6]]>
-            </line>
-            <line>
-              <![CDATA[STEP7]]>
-            </line>
-            <line>
-              <![CDATA[STEP8]]>
-            </line>
-            <line>
-              <![CDATA[STEP9]]>
-            </line>
-            <line>
-              <![CDATA[STEP10]]>
-            </line>
-            <line>
-              <![CDATA[STEP11]]>
-            </line>
-            <line>
-              <![CDATA[STEP12]]>
-            </line>
-            <line>
-              <![CDATA[STEP13]]>
-            </line>
-            <line>
-              <![CDATA[STEP14]]>
-            </line>
-            <line>
-              <![CDATA[STEP15]]>
-            </line>
-            <line>
-              <![CDATA[STEP16]]>
-            </line>
-            <line>
-              <![CDATA[STEP17]]>
-            </line>
-            <line>
-              <![CDATA[STEP18]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- ChatBot -->
-        <test-method is-config="true" signature="closewindow()[pri:0, instance:commonMethods.Testcases@117632cf]" started-at="2023-11-02T14:46:12 IST" name="closewindow" finished-at="2023-11-02T14:46:12 IST" duration-ms="277" status="PASS">
+        </test-method> <!-- ChatBot2 -->
+        <test-method is-config="true" signature="closewindow()[pri:0, instance:commonMethods.Testcases@3b582111]" started-at="2023-11-02T18:15:23 IST" name="closewindow" finished-at="2023-11-02T18:15:23 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closewindow -->

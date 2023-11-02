@@ -307,7 +307,7 @@ public void waitForElementWithLessWait(WebDriver driver, String xpath) {
 			webElement.click();
 			System.out.println(values[0]+" clicked");
 			add(driver, "Click on " + values[0], LogAs.PASSED, true, values[0]);
-//			Reporter.log("Click on " + values[0]);
+			
 		} catch (Exception e) {
 			System.out.println(" Exception "+e);
 			add1(driver, "Unable to click on " + values[0], LogAs.FAILED, true, values[0]);

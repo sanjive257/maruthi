@@ -2,6 +2,7 @@ package scripts;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import commonMethods.Config;
 import commonMethods.Keywords;
@@ -17,10 +18,10 @@ public class ChatBot extends Keywords {
 		    waitForElementWithLessWait(driver, chatbot);
 		    click(driver,chatbot);
 			
-		    
 		    responseTimeCalculator(driver, loan);
 			waitForElementWithLessWait(driver, loan);
 			click(driver,loan);
+			
 			asserterText(driver, MssfText,Config.MSSFassert,"Mssf loan");
 			
 			responseTimeCalculator(driver, financier);

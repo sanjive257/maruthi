@@ -213,7 +213,7 @@ public class TestNgXml {
 	         Element listeners = doc.createElement("listeners");
 	         rootElement.appendChild(listeners);
 	         
-	         String a[]={"atu.testng.reports.listeners.ATUReportsListener","atu.testng.reports.listeners.ConfigurationListener","atu.testng.reports.listeners.MethodListener"};
+	         String a[]={"atu.testng.reports.listeners.ATUReportsListener","atu.testng.reports.listeners.ConfigurationListener","atu.testng.reports.listeners.MethodListener","mails.CustomTestListener","org.testng.reporters.XMLReporter"};
 	         for(int i=0;i<a.length;i++)
 	         {
 	        	 Element listener = doc.createElement("listener");

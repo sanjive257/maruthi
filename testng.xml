@@ -5,7 +5,7 @@
 			<class name="commonMethods.Testcases" />
 		</classes>
 		<methods>
-			<include name="ChatBot" priority="1" />
+			<include name="ChatBot2" priority="2" />
 		</methods>
 	</test>
 	<listeners>

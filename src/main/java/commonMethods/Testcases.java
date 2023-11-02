@@ -17,6 +17,7 @@ import atu.testng.reports.listeners.ConfigurationListener;
 import atu.testng.reports.listeners.MethodListener;
 import mails.EmailSender;
 import scripts.ChatBot;
+import scripts.ChatBot2;
 
 
 
@@ -42,6 +43,8 @@ public class Testcases extends Config {
 
 	ChatBot ck = new ChatBot();
     EmailSender sm = new EmailSender();
+    ChatBot2 ns = new ChatBot2();
+    
 
 
 	@BeforeClass
@@ -69,7 +72,12 @@ public class Testcases extends Config {
 		
 		
 	}
-	
+	@Test
+	public void ChatBot2(){
+		ns.createnexa1(driver, appURL);
+		
+		
+	}
 //	@AfterSuite
 //	public void chatbotassitance1(){
 //		//ck.createnexa(driver, appURL);
